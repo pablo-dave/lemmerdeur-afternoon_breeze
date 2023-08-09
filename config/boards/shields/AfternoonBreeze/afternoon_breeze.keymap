@@ -114,16 +114,16 @@
 // |-------|-----|-----|------|------|------|                     |------|-------|-------|------|-------|------|  -----|------|----- |
 // | SHIFT |  A  |  S  |  D   |  F   |  G   |                     |  H   |  J    |  K    |  L   |   ;   |  '   |       |  UP  |      |
 // |-------|-----|-----|------|------|------|                     |------|-------|-------|------|-------|------|  -----|------|----- |
-// | LCTRL |  Z  |  X  |  C   |  V   |  B   |                     |  N   |  M    |  ,    |  .   |   /   |  DEL | |LEFT | DOWN |RIGHT |
+// | LCTRL |  Z  |  X  |  C   |  V   |  B   |                     |  N   |  M    |  ,    |  .   |   /   |  ENTER | |LEFT | DOWN |RIGHT |
 //  ---------------- ----------------------------              ------------------------------ ---------------------------------------
-//                  |WINMOD| LALT | LGUI | SPACE |            |SPACE|ENTER | BACKSPACE  | RGUI |
+//                  |WINMOD| LALT | LGUI | SPACE |            |SPACE| BACKSPACE | DEL  | RGUI |
 //                   ----------------------------              ------------------------------
 			bindings = <
 &kp ESC     &kp N1 &kp N2 &kp N3 &kp N4   &kp N5                          &kp N6     &kp N7   &kp N8    &kp N9  &kp N0   &kp MINUS  &kp BSLH  &mo 4     &kp PG_UP
 &kp TAB     &kp Q  &kp W  &kp E  &kp R    &kp T                           &kp Y      &kp U    &kp I     &kp O   &kp P    &kp LBKT   &kp EQUAL &kp HOME  &kp PG_DN
 &kp LSHFT   &kp A  &kp S  &kp D  &kp F    &kp G                           &kp H      &kp J    &kp K     &kp L   &kp SEMI &kp APOS             &kp UP 
-&kp LCTRL   &kp Z  &kp X  &kp C  &kp V    &kp B                           &kp N      &kp M    &kp COMMA &kp DOT &kp FSLH &kp DEL    &kp LEFT  &kp DOWN  &kp RIGHT
-                         &mo 2 &kp LALT &kp LGUI &kp SPACE     &kp SPACE &kp ENTER  &kp BSPC  &kp RGUI
+&kp LCTRL   &kp Z  &kp X  &kp C  &kp V    &kp B                           &kp N      &kp M    &kp COMMA &kp DOT &kp FSLH &kp ENTER    &kp LEFT  &kp DOWN  &kp RIGHT
+                         &mo 2 &kp LALT &kp LGUI &kp SPACE     &kp SPACE &kp BSPC  &kp DEL  &kp RGUI
 			>;
 		};
 
