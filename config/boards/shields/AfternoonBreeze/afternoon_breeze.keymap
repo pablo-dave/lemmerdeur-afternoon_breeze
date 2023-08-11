@@ -155,17 +155,17 @@
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------| |-------|------|-------|
 // | TAB   |WScSh|Vol+ | Mute |      |      |                   |      |      |      |      |       |   ]   | |       |      |       |
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------|  -------|------|------ |
-// | CAPS  |WPDes|Vol- |WNDes |      |      |                   |      |      |      |      |       |       |         | BT0  |       |
+// | CAPS  |WPDes|Vol- |WNDes |PTask |NTask |                   |      |      |      |      |       |   }   |         | BT0  |       |
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------|  -------|------|------ |
-// | LCTRL |     |     |      |      |      |                   |      |      |      |      |       |   -   | | BT1   | BT2  | BT3   |
+// | LCTRL |AuPrev|AuNext|Pause|PREV | NEXT |                   |      |      |      |      |       |       | | BT1   | BT2  | BT3   |
 //  ---------------- ----------------------------           ----------------------------- -------------------------------------------
 //                  |      | LGUI | LALT | SPACE |         | BSPACE |ENTER | RALT | MAC  |
 //                   ----------------------------           -----------------------------
 			bindings = <
-&kp GRAVE &kp F1  &kp F2       &kp F3     &kp F4  &kp F5                       &kp F6  &kp F7  &kp F8  &kp F9 &kp F10 &kp F11      &kp F12      &none         &bt BT_CLR
-&trans    &wsshot &kp C_VOL_UP &kp C_MUTE &none   &none                        &none   &none   &none   &none  &none   &kp RBKT     &none        &none         &none
-&kp CAPS  &wpdesk &kp C_VOL_DN &wndesk    &none   &none                        &none   &none   &none   &none  &none   &none                     &bt BT_SEL 0
-&trans    &none   &none        &none      &none   &none                        &none   &none   &none   &none  &none   &kp MINUS    &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3
+&kp GRAVE &kp F1  	 &kp F2       &kp F3     &kp F4  	  		&kp F5                       &kp F6  &kp F7  &kp F8  &kp F9 &kp F10 &kp F11      &kp F12      &none         &bt BT_CLR
+&trans    &wsshot    &kp C_VOL_UP &kp C_MUTE &none   	  		&none                        &none   &none   &none   &none  &none   &kp RBKT     &none        &none         &none
+&kp CAPS  &wpdesk    &kp C_VOL_DN &wndesk    &kp C_AL_PREV_TASK &kp C_AL_NEXT_TASK           &none   &none   &none   &none  &none   &kp RBRC                  &bt BT_SEL 0
+&trans    &kp K_PREV &kp K_NEXT   &kp K_PP   &kp K_BACK   		&kp K_FORWARD                &none   &none   &none   &none  &none   &none        &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3
                                &none      &trans  &trans  &trans       &trans  &trans  &trans  &to 1
 			>;
 		};
@@ -176,17 +176,17 @@
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------| |-------|------|-------|
 // | TAB   |mwcyc|Vol+ | Mute |      |      |                   |      |      |      |      |       |   ]   | |       |      |       |
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------|  -------|------|------ |
-// | CAPS  |MPDes|Vol- |MNDes | PTask| NTask|                   |      |      |      |      |       |   }    |         | BT0  |       |
+// | CAPS  |MPDes|Vol- |MNDes |      |      |                   |      |      |      |      |       |   }   |         | BT0  |       |
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------|  -------|------|------ |
-// | LGUI  |AuPrev| AuNext|Pause| PREV | NEXT |                   |      |      |      |      |       |       | | BT1   | BT2  | BT3   |
+// | LGUI  |     |     |      |      |      |                   |      |      |      |      |       |       | | BT1   | BT2  | BT3   |
 //  ---------------- ----------------------------           ----------------------------- -------------------------------------------
 //                  |      |LCTRL | LALT | SPACE |         | BSPACE |ENTER | RALT | WIN  |
 //                   ----------------------------           -----------------------------
 			bindings = <
-&kp GRAVE &kp F1     &kp F2       &kp F3     &kp F4     		&kp F5                       &kp F6  &kp F7  &kp F8  &kp F9 &kp F10 &kp F11      &kp F12      &none         &bt BT_CLR
-&trans    &mwcycle   &kp C_VOL_UP &kp C_MUTE &none      		&none                        &none   &none   &none   &none  &none   &kp RBKT     &none        &none         &none
-&kp CAPS  &mpdesk    &kp C_VOL_DN &mndesk    &kp C_AL_PREV_TASK &kp C_AL_NEXT_TASK   		 &none   &none   &none   &none  &none   &kp RBRC                  &bt BT_SEL 0
-&kp LGUI  &kp K_PREV &kp K_NEXT   &kp K_PP   &kp K_BACK 		&kp K_FORWARD                &none   &none   &none   &none  &none   &none        &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3
+&kp GRAVE &kp F1     &kp F2       &kp F3     &kp F4 &kp F5                       &kp F6  &kp F7  &kp F8  &kp F9 &kp F10 &kp F11      &kp F12      &none         &bt BT_CLR
+&trans    &mwcycle   &kp C_VOL_UP &kp C_MUTE &none  &none                        &none   &none   &none   &none  &none   &kp RBKT     &none        &none         &none
+&kp CAPS  &mpdesk    &kp C_VOL_DN &mndesk    &none  &none				   		 &none   &none   &none   &none  &none   &kp RBRC                  &bt BT_SEL 0
+&kp LGUI  &none      &none        &none      &none  &none               		 &none   &none   &none   &none  &none   &none        &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3
                                 &none      &kp LCTRL  &trans  &trans       &trans  &trans  &trans  &to 0
 			>;
 		};
